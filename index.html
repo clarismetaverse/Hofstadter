@@ -20,26 +20,39 @@
     margin: 25px 0;
   }
   img {
-    max-width: 80%;
+    max-width: 90%;
     border: 1px solid #ccc;
     padding: 6px;
     border-radius: 6px;
+    background: #fff;
   }
   .caption {
     font-size: 0.9em;
     color: #555;
+    margin-top: 6px;
   }
+  .seg-A-red   { color: #c0392b; font-weight: 600; }  /* piano concettuale “centrato in A” */
+  .seg-B-blue  { color: #2980b9; font-weight: 600; }  /* piano concettuale “centrato in B” */
+  .seg-base    { color: #000;    font-weight: 600; }  /* segmento “grezzo”, grafico */
+  .seg-mixed   { color: #16a085; font-weight: 600; }  /* identità composita / sintesi */
 </style>
 </head>
 <body>
 
+<!-- Duck–rabbit subito in alto -->
+<div class="figure">
+  <img src="duck-rabbit.png" alt="duck rabbit ambiguous figure">
+  <div class="caption">
+    Fig. 1 — One drawing, two conceptual fields: “duck” and “rabbit”. Euclid’s figures quietly behave the same way.
+  </div>
+</div>
+
 <h1>Analogy as the Hidden Engine of Euclidean Reasoning</h1>
 
 <p>
-Wittgenstein’s <em>duck-rabbit</em> figure is usually discussed in the context of 
-perception and aspect-switching — as a way to show that interpretation is 
-metaphor all the way down. The same drawing can be “a duck” or “a rabbit,” 
-depending on the conceptual frame we activate. 
+Wittgenstein’s <em>duck–rabbit</em> figure is usually discussed in the context of 
+perception and aspect-switching: the same drawing can be seen <em>as</em> a duck or 
+<em>as</em> a rabbit, depending on the conceptual frame we activate. 
 This reveals something deep: perception is not passive; it is analogical.
 </p>
 
@@ -56,55 +69,99 @@ But if we look at how the Greeks — especially Euclid and Plato —
 actually performed mathematics, 
 we find not formal symbolic manipulation, but 
 <em>chains of controlled aspect-switchings</em>.
-The proof is not a derivation: it is a 
+A proof is not just a derivation: it is a 
 <em>guided traversal of interpretive frames</em>.
 </p>
 
-<div class="figure">
-  <img src="duck-rabbit.png" alt="duck rabbit">
-  <div class="caption">Fig. 1 — A classical example of dual interpretation. Euclid’s diagrams behave similarly.</div>
-</div>
-
-<h2>The Equilateral Triangle: A Cognitive Interpretation</h2>
+<h2>The Equilateral Triangle: A Gestalt of Multiple Identities</h2>
 
 <p>
 Consider Euclid’s construction of an equilateral triangle on a given finite segment.
-The diagram is always the same, yet during the proof we interpret its parts 
-as belonging to different conceptual “worlds”:
+The underlying <em>graph</em> of the figure is extremely simple — a segment, two circles, 
+one intersection point — yet during the proof these same marks belong to 
+different conceptual–perceptual planes.
 </p>
 
-<ul>
-  <li>the given segment as a <strong>distance constraint</strong>,</li>
-  <li>the same segment as a <strong>radius</strong> of a circle,</li>
-  <li>the two endpoints as <strong>centers of generative symmetry</strong>,</li>
-  <li>the intersection point of the circles as a 
-      <strong>double-aspect vertex</strong>: 
-      at once “equidistant-from-A” and “equidistant-from-B”.</li>
-</ul>
-
 <div class="figure">
-  <img src="equilateral-construction.png" alt="equilateral triangle">
+  <!-- QUI metti l’immagine gestaltica: base nera + cerchi/segmenti colorati -->
+  <img src="equilateral-gestalt.png" alt="equilateral triangle gestalt construction">
   <div class="caption">
-    Fig. 2 — The same diagram shifts conceptual identity multiple times during the proof.
+    Fig. 2 — A single black graph (segment AB, circles, point C) with two colored “readings”: 
+    the red world of the circle centered at A, the blue world of the circle centered at B. 
+    Euclid himself alternates between naming the segment as AB and BA depending on the center.
   </div>
 </div>
 
-<h3>What the Proof Actually Does</h3>
 <p>
-The construction reveals the triangle’s property not by logical deduction alone, 
-but by unifying the properties that emerge from the 
-<em>different interpretations</em> of the same graph:
+In the “raw” drawing, the segment <span class="seg-base">AB</span> is just a line between two points.
+But once we place a circle with center in A, 
+<span class="seg-base">AB</span> becomes 
+<span class="seg-A-red">“AB-as-radius-from-A”</span>.  
+When we place a circle with center in B, the very same mark becomes 
+<span class="seg-B-blue">“BA-as-radius-from-B”</span>.  
+Historically, Euclid mirrors this by sometimes writing AB and sometimes BA,
+quietly signalling the shift of center.
 </p>
 
+<p>
+The intersection point C inherits this duality:
+</p>
 <ul>
-  <li>As a <strong>circle construction</strong>: every point on the circumference is equidistant from its center.</li>
-  <li>As a <strong>distance graph</strong>: AB is the shared unit that propagates to AC and BC.</li>
-  <li>As a <strong>symmetry schema</strong>: the intersection is a fixed point of two equal radii.</li>
+  <li>in the red plane it is “a point on the circle of A” (hence AC = <span class="seg-A-red">AB</span>),</li>
+  <li>in the blue plane it is “a point on the circle of B” (hence BC = <span class="seg-B-blue">BA</span>).</li>
 </ul>
 
 <p>
-By reconciling these distinct “readings,” the demonstration forces the 
-equilateral triangle to appear as the inevitable synthesis of all interpretations.
+Cognitively, the proof proceeds by asking us to accept these colored identities 
+as <em>simultaneously</em> true and then to fuse them.  
+When we do so, the triangle acquires a new, composite identity:
+<span class="seg-mixed">all three sides belong to both planes at once</span>.
+</p>
+
+<div class="figure">
+  <!-- opzionale: una seconda immagine con solo il triangolo e i lati sintetizzati -->
+  <img src="equilateral-colored-triangle.png" alt="equilateral triangle with colored conceptual planes">
+  <div class="caption">
+    Fig. 3 — The same triangle: AC “in red”, BC “in blue”, and AB as the segment that 
+    anchors both worlds. The equilateral property is the stabilized overlap of these readings.
+  </div>
+</div>
+
+<h3>The Proof, Seen Through Its Colors</h3>
+
+<p>
+In symbolic textbooks, the argument is written in neutral form: 
+“since C lies on the circle of center A with radius AB, AC = AB; 
+since C lies on the circle of center B with radius BA, BC = BA; hence AB = AC = BC.”
+</p>
+
+<p>
+Seen through the colored conceptual planes, the same steps become:
+</p>
+
+<ul>
+  <li>
+    <span class="seg-A-red">AB</span> is the chosen radius for the circle centered at A; 
+    every point on that circle is at “red-distance AB” from A, 
+    so AC inherits the red identity of <span class="seg-A-red">AB</span>.
+  </li>
+  <li>
+    <span class="seg-B-blue">BA</span> is the chosen radius for the circle centered at B; 
+    every point on that circle is at “blue-distance BA” from B, 
+    so BC inherits the blue identity of <span class="seg-B-blue">BA</span>.
+  </li>
+  <li>
+    But in the underlying black graph, 
+    <span class="seg-base">AB</span> and <span class="seg-base">BA</span> are the same segment, 
+    so the red and blue distances must collapse into a single invariant:
+    <span class="seg-mixed">AB = AC = BC</span>.
+  </li>
+</ul>
+
+<p>
+The demonstration unites all these interpretations and makes the property of the 
+equilateral triangle appear not as a formal trick, but as the 
+<b>inevitable synthesis of several coexisting conceptual worlds</b>.
 </p>
 
 <h2>Cognitive Insert: How Geometry Creates Concepts</h2>
@@ -132,6 +189,11 @@ In this sense, a Euclidean demonstration is not mere deduction:
 it is a controlled analogical ascent that stabilizes a concept 
 by passing it through multiple interpretive worlds.
 </p>
+
+<p><strong>
+In this sense, a geometric proof is nothing but a myth: 
+a story we tell to reveal the good origin of an idea.
+</strong></p>
 
 </body>
 </html>
